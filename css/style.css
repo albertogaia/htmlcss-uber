@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+/* COMMON */
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+.span-bold {
+    font-weight: 500;
+}
+
+section:not(#intro) {
+    margin: 100px 0px;
+}
+
+.logo-uber {
+    height: 80px;
+    filter: invert(1);
+    padding: 20px 0px;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 44px;
+    padding: 30px 0px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 15px;
+}
+
+a:not(header) {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 1px solid lightslategrey;
+}
+
+span {
+    display: block;
+    padding: 20px 0px;
+    line-height: 24px;
+}
+
+button {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.w-85 {
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.w-80 {
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.w-70 {
+    width: 70%;
+    float: left;
+}
+
+.w-50 {
+    width: 50%;
+    float: left;
+}
+
+.w-30 {
+    width: 30%;
+    float: left;
+}
+
+.col-33 {
+    float: left;
+    width: calc(100% / 3 - 10px);
+}
+
+.col-center {
+    margin: 0 15px;
+}
+
+.col {
+    width: 50%;
+}
+
+.fas:not(header) {
+    font-size: 26px;
+}
+
+header .fas {
+    font-size: 16px;
+}
+
+
+/* FINE COMMON */
+
+
+/* HEADER */
+
+header {
+    background-color: black;
+}
+
+header .nav-left {
+    float: left;
+    padding-left: 20px;
+}
+
+header .nav-right {
+    float: right;
+}
+
+header .w-85 nav a {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-bottom: none;
+}
+
+header .nav-right a:last-child {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+header nav a:hover {
+    background-color: #333333;
+    border-radius: 20px;
+}
+
+header .w-85 {
+    height: 80px;
+    line-height: 80px;
+}
+
+header img {
+    float: left;
+}
+
+
+/* FINE HEADER */
+
+
+/* MAIN */
+
+
+/* jumbotron */
+
+.jumbotron .container {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid black;
+}
+
+.jumbotron .box {
+    height: 100%;
+    width: calc(100% / 3 - 30px);
+    position: relative;
+    margin: 0px 15px;
+    float: left;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+}
+
+.jumbotron .box:hover {
+    border-bottom: 3px solid black;
+    cursor: pointer;
+    color: rgb(67, 67, 67);
+}
+
+.jumbotron .contained {
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.jumbotron .container #active {
+    border-bottom: 3px solid rgb(67, 67, 67);
+}
+
+.jumbotron {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/jumbo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron .col {
+    width: 40%;
+    max-width: 700px;
+}
+
+.jumbotron .w-80 .col {
+    background-color: white;
+}
+
+.jumbo-bottom {
+    padding: 50px 40px;
+}
+
+.jumbotron .w-80 .jumbo-bottom span,
+.jumbo-bottom button {
+    display: block;
+    margin: 30px 0px;
+}
+
+.banner-ub-business {
+    background-image: url('../img/banner.png');
+    background-size: cover;
+    padding: 50px 0px;
+    background-position: center;
+}
+
+.jumbotron .filter-jumbo {
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.filter-jumbo>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+/* sicurezza */
+
+#sicurezza img {
+    width: 100%;
+}
+
+.w-50left {
+    width: calc(100% - 40px);
+    float: left;
+    margin-right: 40px;
+}
+
+.w-50right {
+    width: calc(100% - 40px);
+    float: right;
+    margin-left: 40px;
+}
+
+#sicurezza span {
+    padding-right: 40px;
+    font-weight: 300;
+}
+
+#sicurezza .w-50 div {
+    padding: 10px 0px;
+}
+
+
+/* app */
+
+#app {
+    padding: 50px 0px;
+    background-color: #F6F6F6;
+}
+
+#app .col {
+    float: left;
+    width: 47%;
+}
+
+#app .col:last-child {
+    float: right;
+}
+
+#app img {
+    width: 20%;
+    vertical-align: middle;
+}
+
+#app h3 {
+    width: 60%;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.app-download {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #cecece;
+}
+
+.app-download:hover {
+    opacity: 0.8;
+}
+
+#app i {
+    width: 20%;
+    text-align: right;
+}
+
+
+/* register */
+
+#register .col {
+    float: left;
+    width: 47%;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+
+#register .col h2 {
+    display: inline-block;
+    width: 80%;
+}
+
+#register .col .fas {
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+}
+
+#register .col:last-child {
+    float: right;
+}
+
+
+/* FINE MAIN */
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 100px;
+    padding: 50px 0px;
+    background-color: black;
+}
+
+footer .logo-uber {
+    padding: 20px;
+}
+
+footer h4 {
+    color: white;
+    font-weight: 400;
+    padding: 20px;
+}
+
+footer .foot-menu h4 {
+    font-weight: 500;
+}
+
+footer span {
+    display: inline-block;
+}
+
+footer ul li,
+footer ul li a,
+footer .w-80 span,
+footer .fas,
+footer .w-80 nav a,
+footer nav h4,
+footer .location {
+    color: white;
+}
+
+footer .foot-menu {
+    width: 100%;
+}
+
+footer .foot-menu nav {
+    padding: 50px 0px;
+    display: inline-block;
+    width: 30%;
+    float: left;
+}
+
+footer nav:first-child {
+    font-weight: 500;
+}
+
+footer .w-80 nav a {
+    display: block;
+    text-decoration: none;
+    border-bottom: none;
+    padding: 10px 20px;
+}
+
+footer .foot-social {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+footer .fab,
+footer .fas {
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+footer .fab,
+footer .country,
+footer .city {
+    padding: 20px;
+}
+
+footer .fab:hover,
+footer .country:hover,
+footer .city:hover {
+    cursor: pointer;
+    background-color: #333333;
+}
+
+footer .icons,
+footer .location,
+footer .country,
+footer .city {
+    display: inline;
+}
+
+footer .location .fas {
+    margin-left: 0px;
+}
+
+footer img {
+    height: 40px;
+    text-align: right;
+}
+
+footer .w-30 {
+    float: right;
+    text-align: right;
+}
+
+footer .foot-bottom {
+    width: 100%;
+}
+
+footer .foot-bottom nav a {
+    display: inline-block;
+}
+
+footer .foot-bottom nav a,
+footer .foot-bottom span {
+    font-size: 12px;
+    color: grey;
+}
+
+
+/* FINE FOOTER */
